@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Histoire d'Affiches — Affiches anciennes originales</title>
+  <meta name="description" content="Plus de 120 affiches anciennes originales : chemins de fer, Bretagne, aviation, Cassandre, Villemot, Savignac. L'histoire de chaque affiche, et où l'acheter.">
+  <meta property="og:title" content="Histoire d'Affiches — Affiches anciennes originales">
+  <meta property="og:description" content="Chemins de fer, aviation, tourisme, publicité : des affiches originales et leur histoire.">
+  <meta property="og:image" content="https://i.ebayimg.com/images/g/jC0AAeSwPahq3O81/s-l1600.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="kicker">Affiches anciennes originales</p>
+    <h1>Histoire d'Affiches</h1>
+    <p class="lede">Chemins de fer, aviation, tourisme, publicité. Chaque affiche raconte une époque — découvrez leur histoire, et adoptez celle qui vous parle.</p>
+    <p class="trust">100 % d'évaluations positives · plus de 630 affiches vendues</p>
+    <nav class="links">
+      <a class="btn" href="https://www.ebay.fr/str/histoiredaffiches" target="_blank" rel="noopener">Boutique eBay</a>
+      <a class="btn ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="section">Pièces maîtresses</h2>
+    <section class="grid featured" id="featured"></section>
+
+    <h2 class="section">Toute la collection</h2>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Rechercher : Bretagne, Villemot, 1930…" aria-label="Rechercher">
+      <select id="sort" aria-label="Trier">
+        <option value="">Trier par catégorie</option>
+        <option value="prix-desc">Prix décroissant</option>
+        <option value="prix-asc">Prix croissant</option>
+        <option value="annee">Année</option>
+      </select>
+    </div>
+    <div class="filters" id="filters"></div>
+    <p class="count" id="count"></p>
+    <section class="grid" id="grid" aria-live="polite"></section>
+  </main>
+
+  <dialog id="detail">
+    <button class="close" aria-label="Fermer" onclick="this.closest('dialog').close()">×</button>
+    <div class="detail-body">
+      <img id="d-img" alt="">
+      <div>
+        <p class="kicker" id="d-cat"></p>
+        <h2 id="d-titre"></h2>
+        <p class="meta" id="d-meta"></p>
+        <div id="d-histoire"></div>
+        <p class="prix" id="d-prix"></p>
+        <a class="btn" id="d-ebay" target="_blank" rel="noopener">Voir et acheter sur eBay</a>
+        <p class="note">Paiement sécurisé et protection acheteur eBay · envoi soigné en tube rigide</p>
+      </div>
+    </div>
+  </dialog>
+
+  <footer>
+    <p>Toutes nos affiches sont des originaux d'époque.</p>
+    <p>© Histoire d'Affiches</p>
+  </footer>
+
+  <script src="posters.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
