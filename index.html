@@ -4,67 +4,106 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Histoire d'Affiches — Affiches anciennes originales</title>
-  <meta name="description" content="Plus de 120 affiches anciennes originales : chemins de fer, Bretagne, aviation, Cassandre, Villemot, Savignac. L'histoire de chaque affiche, et où l'acheter.">
-  <meta property="og:title" content="Histoire d'Affiches — Affiches anciennes originales">
-  <meta property="og:description" content="Chemins de fer, aviation, tourisme, publicité : des affiches originales et leur histoire.">
+  <meta name="description" content="Affiches anciennes originales : chemins de fer de la Belle Époque, aviation, tourisme, grands affichistes français — Cassandre, Villemot, Savignac, Paul Colin.">
+  <link rel="alternate" hreflang="fr" href="https://condorpase.github.io/histoiredaffiches/?lang=fr">
+  <link rel="alternate" hreflang="en" href="https://condorpase.github.io/histoiredaffiches/?lang=en">
+  <meta property="og:title" content="Histoire d'Affiches — Affiches anciennes originales · Original vintage posters">
+  <meta property="og:description" content="Chemins de fer, aviation, tourisme, publicité : des affiches originales et leur histoire. Original French vintage posters and their stories.">
   <meta property="og:image" content="https://i.ebayimg.com/images/g/jC0AAeSwPahq3O81/s-l1600.webp">
+  <meta name="theme-color" content="#F4F1EA">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231B2840'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='46' fill='%23F4F1EA'%3EH%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <p class="kicker">Affiches anciennes originales</p>
-    <h1>Histoire d'Affiches</h1>
-    <p class="lede">Chemins de fer, aviation, tourisme, publicité. Chaque affiche raconte une époque — découvrez leur histoire, et adoptez celle qui vous parle.</p>
-    <p class="trust">100 % d'évaluations positives · plus de 630 affiches vendues</p>
-    <nav class="links">
-      <a class="btn" href="https://www.ebay.fr/str/histoiredaffiches" target="_blank" rel="noopener">Boutique eBay</a>
-      <a class="btn ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-    </nav>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Histoire d'Affiches">
+      <span class="seal" data-seal></span>
+      <span class="wordmark">Histoire <i>d’Affiches</i><small data-i18n="wordmark.sub">Affiches anciennes originales</small></span>
+    </a>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="#collection" data-i18n="nav.collection">Collection</a>
+        <a href="#maison" data-i18n="nav.maison">La maison</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <a class="ig" href="https://www.instagram.com/histoiredaffiches/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg>
+      </a>
+      <div class="lang" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang="fr">FR</button><span>|</span><button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <h2 class="section">Pièces maîtresses</h2>
-    <section class="grid featured" id="featured"></section>
+    <section class="hero" id="hero"></section>
 
-    <h2 class="section">Toute la collection</h2>
-    <div class="toolbar">
-      <input id="search" type="search" placeholder="Rechercher : Bretagne, Villemot, 1930…" aria-label="Rechercher">
-      <select id="sort" aria-label="Trier">
-        <option value="">Trier par catégorie</option>
-        <option value="prix-desc">Prix décroissant</option>
-        <option value="prix-asc">Prix croissant</option>
-        <option value="annee">Année</option>
-      </select>
-    </div>
-    <div class="filters" id="filters"></div>
-    <p class="count" id="count"></p>
-    <section class="grid" id="grid" aria-live="polite"></section>
+    <section class="maison" id="maison">
+      <p class="eyebrow" data-i18n="maison.eyebrow">La maison</p>
+      <p class="statement" data-i18n="maison.statement"></p>
+      <ul class="engagements">
+        <li><h3 data-i18n="e1.h"></h3><p data-i18n="e1.p"></p></li>
+        <li><h3 data-i18n="e2.h"></h3><p data-i18n="e2.p"></p></li>
+        <li><h3 data-i18n="e3.h"></h3><p data-i18n="e3.p"></p></li>
+      </ul>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="collection-head">
+        <h2 data-i18n="coll.h">La collection</h2>
+        <p class="count" id="count"></p>
+      </div>
+      <div class="controls">
+        <div class="filters" id="filters"></div>
+        <div class="tools">
+          <input id="search" type="search" data-i18n-ph="search" placeholder="Rechercher">
+          <select id="sort">
+            <option value="selection" data-i18n="sort.selection">Sélection</option>
+            <option value="prix-asc" data-i18n="sort.prix">Prix croissant</option>
+            <option value="epoque" data-i18n="sort.epoque">Époque</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
   </main>
 
-  <dialog id="detail">
-    <button class="close" aria-label="Fermer" onclick="this.closest('dialog').close()">×</button>
-    <div class="detail-body">
-      <img id="d-img" alt="">
-      <div>
-        <p class="kicker" id="d-cat"></p>
-        <h2 id="d-titre"></h2>
-        <p class="meta" id="d-meta"></p>
-        <div id="d-histoire"></div>
-        <p class="prix" id="d-prix"></p>
-        <a class="btn" id="d-ebay" target="_blank" rel="noopener">Voir et acheter sur eBay</a>
-        <p class="note">Paiement sécurisé et protection acheteur eBay · envoi soigné en tube rigide</p>
+  <footer class="site-footer" id="contact">
+    <span class="seal seal-footer" data-seal></span>
+    <div>
+      <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+      <p data-i18n-html="contact.p"></p>
+      <p class="footer-links">
+        <a id="store-link" href="https://www.ebay.fr/str/histoiredaffiches" target="_blank" rel="noopener" data-i18n="store">Boutique eBay</a>
+        <a href="https://www.instagram.com/histoiredaffiches/" target="_blank" rel="noopener">Instagram @histoiredaffiches</a>
+      </p>
+    </div>
+    <p class="legal">© Histoire d’Affiches</p>
+  </footer>
+
+  <dialog class="viewer" id="viewer">
+    <button class="v-close" id="v-close"><span data-i18n="close">Fermer</span> ✕</button>
+    <button class="v-nav v-prev" id="v-prev">‹</button>
+    <button class="v-nav v-next" id="v-next">›</button>
+    <div class="v-body" tabindex="-1" autofocus>
+      <figure class="v-figure"><img id="v-img" alt=""></figure>
+      <div class="v-text">
+        <p class="eyebrow" id="v-kicker"></p>
+        <h2 id="v-title"></h2>
+        <p class="v-meta" id="v-meta"></p>
+        <div class="v-story" id="v-story"></div>
+        <p class="v-price" id="v-price"></p>
+        <a class="btn btn-light" id="v-buy" target="_blank" rel="noopener" data-i18n="buy">Acquérir</a>
+        <p class="v-note" data-i18n="note"></p>
       </div>
     </div>
   </dialog>
 
-  <footer>
-    <p>Toutes nos affiches sont des originaux d'époque.</p>
-    <p>© Histoire d'Affiches</p>
-  </footer>
-
   <script src="posters.js"></script>
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
