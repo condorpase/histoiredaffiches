@@ -1,4 +1,5 @@
-const IMG = (key, size) => `https://i.ebayimg.com/images/g/${key}/s-l${size}.webp`;
+// Photos recadrées (dossier images/, une par n° eBay)
+const IMG = p => `images/${p.id}.jpg`;
 
 // Affiche à la une
 const HERO_ID = "900037920044"; // Saint-Malo – Dinard, vers 1897
@@ -88,7 +89,7 @@ function renderHero() {
   h.querySelector(".hero-price").textContent = EUR(hero.prix);
   h.querySelector(".btn").textContent = t("hero.btn");
   const img = h.querySelector("img");
-  img.src = IMG(hero.img, 1600);
+  img.src = IMG(hero);
   img.alt = L.titre(hero);
   h.querySelector(".btn").onclick = () => openPiece(hero, [hero]);
   h.querySelector(".hero-figure").onclick = () => openPiece(hero, [hero]);
@@ -111,7 +112,7 @@ function piece(p) {
     <div class="cap"><span class="artist"></span><span class="title"></span>
     <span class="line"><span class="year"></span><span class="price"></span></span></div>`;
   const img = el.querySelector("img");
-  img.src = IMG(p.img, 500);
+  img.src = IMG(p);
   img.alt = L.titre(p);
   el.querySelector(".artist").textContent = p.artiste;
   el.querySelector(".title").textContent = L.titre(p);
@@ -154,7 +155,7 @@ let list = [], index = 0;
 
 function show(p) {
   const img = document.getElementById("v-img");
-  img.src = IMG(p.img, 1600);
+  img.src = IMG(p);
   img.alt = L.titre(p);
   document.getElementById("v-kicker").textContent = L.cat(p.categorie);
   document.getElementById("v-title").textContent = L.titre(p);
