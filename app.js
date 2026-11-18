@@ -1,5 +1,5 @@
 // Photos recadrées (dossier images/, une par n° eBay)
-const IMG = p => `images/${p.id}.jpg`;
+const IMG = p => `${p.id}.jpg`;
 
 // Affiche à la une
 const HERO_ID = "900037920044"; // Saint-Malo – Dinard, vers 1897
